@@ -3,19 +3,56 @@
     <head>
         <title>Scientific videos</title>
         <style>
-body{background-color: black;}
-.size{height: 20%;
-width: 20%;
-border: 2px solid blue;}
+body{background-color: black;
+zoom: 100%;
+text-align: center;
+font-size: 30px;
+color: green;
+}
+.layout{height: 900px;
+width: 1000px;
+border: 0px solid white;
+}
+
+.section{height: 2020px;
+width: 2000px;
+background-color: black;
+text-align: center;
+border: 2px solid white;}
         </style>
     </head>
 <body>
-    <h2 style="color: red">Latin Videos:</h2>
-    <video class="size" controls>
+   <center>
+<div class="section">
+    <h2 style="color: white">Latin Videos:</h2>
+<hr />
+    <video class="layout" muted controls>
         <source src="Roman_Legionary_gives_speech_on_Roman_Triumph_at_Living_Latin_in_New_York_City_⚔️__·_Legionarius_·(1080p).mp4">
     </video>
-    <video class="size" controls>
+    <video class="layout" muted controls>
         <source src="Talk_in_Latin__Technological_Progress_Is_Not_Inevitable___Living_Latin_in_NYC_2024(480p).mp4">
     </video>
+</div>
+</center>
+
+      <center>
+ <div class="section">
+<h2 style="color: white">History Videos:</h2>
+<hr />
+<video src="History_of_Books(18).mp4" id="bookHistory" class="layout" muted controls>
+     </video>
+</div>
+       </center>
 </body>
+             <script>
+document.addEventListener("DOMContentLoaded", function(){
+const bookHistory = document.getElementById("bookHistory");
+
+
+    bookHistory.addEventListener("play", function(){
+
+alert("This video is about the history of books from the period of the creation of the scroll(liber antiquus) to the fall of it, to the indroduction of the codex(liber novus).");
+  }); });
+</script>
+
 </html>
