@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+<title>
+  Partial Derivatives
+</title>
+
+   <style>
+body{background-color: blue;
+  color: white ;
+}
+   </style>
+
+     <script src="tex-mml-chtml.js" async></script>
+       <script>
+     MathJax={
+       tex:{inlineMath: [['$','$']]}
+     };
+       </script>
+</head>
+     <body>
+          <img src="Articles.jpg ">
+<h1><u>Partial Derivatives</u></h1>
+<div>
+  Partial dervitives as the title implies, involves differentiating a function with respect to a particular variable assuming all the others are kept
+  constant, this concept is called partial differentiation, it involves differentiating a function partially with respect to a particular variable though the function contains several variables, 
+  consider $u$ which is a function  of $x$ and $y$, represented as $u(x,y)$:
+  <p>$u= x^2+y^2$</p>
+  taking the partial derivative of $u$ with respect to $x$:
+  <p>$\frac{\partial u}{\partial x}=$</p>
+    <p>$\frac{\partial \, (x^2+y^2)}{\partial x}=$</p>
+    <p>$\frac{\partial \, (x^2)}{\partial x}+\frac{\partial (y^2)}{\partial x}=$</p>
+    <p>$2x+0=$</p>
+    <p>$2x$</p>
+Note from the above partial differentiation, that the partial derivative of a function of a single variable with respect to that variable is the same as the ordinary
+derivative of that function:
+<p>
+  $\frac{\partial \, (x^2)}{\partial x}= \frac{d \, (x^2)}{dx}=2x $
+</p>
+<p>because $x^2$ is a function of $x$ denoted by f(x).</p>
+     <p>Also note that the partial derivative of a function of a single variable with respect to a different variable is $0$, which is as taking the ordinary derivative of any constant with respect to any variable:</p>
+
+     <p>$\frac{\partial \, (y^2)}{\partial x}= \frac{d \, (9)}{dx} = \frac{d \, (k)}{dz}=0$</p>
+     <p>assuming $k$ is a constant.</p>
+</div>
+<div>
+   <h3>Example:</h3>
+   Take the partial derivatives of the following functions with respect to y:
+  
+   <p>(a) $2x^3+2y^5+1$ </p>
+<p>(b) $5x+6y+z^2$</p>
+   <p>(c) $zx+x^3 $</p>
+   <h3>Example Solutions:</h3>
+   <p>(a)</p>
+    <p>
+    $\frac{
+      \partial \, (2x^3+2y^5+1)
+    }{\partial y}=$
+   </p>
+   <p>$\frac{\partial \, (2x^3)}{\partial y}+\frac{\partial \, (2y^5)}{\partial y}+\frac{\partial \, (1)}{\partial y}=$</p>
+   <p>$10y^4$</p>
+   <p>(b)</p>
+   <p>$\frac{\partial \, (5x+6y+z^2)}{\partial y}=$</p>
+   <p>$\frac{\partial \, (5x)}{\partial y}+\frac{\partial \, (6y)}{\partial y}+\frac{\partial \, (z^2)}{\partial y}=$</p>
+   <p>$6$</p>
+  <p>(c)</p>
+   <p>$\frac{\partial \, (zx+x^3)}{\partial y}=$</p>
+   <p>$\frac{\partial \, (zx)}{\partial y}+\frac{\partial \, (x^3)}{\partial y}=$</p>
+   <p>$0$</p>
+</div>
+
+<div>
+  <h3>Final Infernce:</h3>
+  <p>The partial derivative of a constant k with respect to any variable is $0$:</p>
+   <p>$\frac{\partial \, (k)}{\partial z}=0$</p>
+</div>
+
+<div>
+  <h3>Excercise:</h3>
+  Simplify the following:
+  <p>(a) $\frac{\partial \, (x+y+z)}{\partial z}$</p>
+    <p>(b) $\frac{\partial \, (2t^5+5y)}{\partial t}$</p>
+    <p>(c) $\frac{\partial \, (\frac{xy-i^2}{2})}{\partial x}$</p>
+    <h3>Excercise Solutions:</h3>
+    <p>(a)</p>
+    <p>$\frac{\partial \, (x+y+z)}{\partial z}=1$</p>
+    <p>(b)</p>
+    <p>$\frac{\partial \, (2t^5+5y)}{\partial t}=10t^4$</p>
+    <p>(c)</p>
+        <p>$\frac{\partial \, (\frac{xy-i^2}{2})}{\partial x}=\frac{y}{2}$</p>
+</div>
+
+     </body>
+</html>
